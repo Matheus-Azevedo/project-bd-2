@@ -1,7 +1,7 @@
-from config import SQLALCHEMY_DATABASE_URI, mongodb
-from flask import Flask, jsonify, request
-from sqlalchemy import Integer, String, Float, Date
-from flask_sqlalchemy import SQLAlchemy
+from config import SQLALCHEMY_DATABASE_URI
+from flask import Flask, jsonify, request  # type: ignore
+from sqlalchemy import Integer, String, Float, Date  # type: ignore
+from flask_sqlalchemy import SQLAlchemy  # type: ignore
 
 app = Flask(__name__)
 
